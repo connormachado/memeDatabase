@@ -27,7 +27,7 @@ public class SearchFragment extends Fragment implements ISearchFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         this.binding = FragmentSearchBinding.inflate(inflater);
         return this.binding.getRoot();
     }
@@ -58,7 +58,5 @@ public class SearchFragment extends Fragment implements ISearchFragment {
     }
 
     @Override
-    public View getRootView() {
-        return this.binding.getRoot();
-    }
+    public View getRootView() { return this.binding.getRoot(); }
 }
