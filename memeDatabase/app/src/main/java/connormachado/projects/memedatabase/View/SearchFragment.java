@@ -1,7 +1,6 @@
-package connormachado.projects.memedatabase;
+package connormachado.projects.memedatabase.View;
 
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import connormachado.projects.memedatabase.View.ISearchFragment;
 import connormachado.projects.memedatabase.databinding.FragmentSearchBinding;
 
 

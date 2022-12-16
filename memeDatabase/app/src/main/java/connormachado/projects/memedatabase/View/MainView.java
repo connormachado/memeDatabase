@@ -1,4 +1,4 @@
-package connormachado.projects.memedatabase;
+package connormachado.projects.memedatabase.View;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,9 +12,11 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import connormachado.projects.memedatabase.Controller.MainActivity;
+import connormachado.projects.memedatabase.View.IMainView;
 import connormachado.projects.memedatabase.databinding.ActivityMainBinding;
 
-public class MainView extends Fragment implements IMainView{
+public class MainView extends Fragment implements IMainView {
     FragmentManager fmanager;
     ActivityMainBinding binding;
     MainActivity mainActivity;

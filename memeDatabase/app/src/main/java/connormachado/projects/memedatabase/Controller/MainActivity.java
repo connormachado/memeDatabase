@@ -1,9 +1,14 @@
-package connormachado.projects.memedatabase;
+package connormachado.projects.memedatabase.Controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import connormachado.projects.memedatabase.View.IMainView;
+import connormachado.projects.memedatabase.View.ISearchFragment;
+import connormachado.projects.memedatabase.View.MainView;
+import connormachado.projects.memedatabase.View.SearchFragment;
 
 public class MainActivity extends AppCompatActivity implements IMainView.Listener, ISearchFragment.Listener {
     private MainView mainView;

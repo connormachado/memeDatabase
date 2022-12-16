@@ -1,4 +1,4 @@
-package connormachado.projects.memedatabase;
+package connormachado.projects.memedatabase.View;
 
 import android.view.View;
 
