@@ -6,4 +6,13 @@
     <string name="create_account">Create Account</string>
     <string name="login">Login</string>
     <string name="memebase">MemeBase</string>
+    <string name="search">Search</string>
+    <string name="play">Play</string>
+    <string name="welcome">Welcome</string>
+    <string name="give_your_playlist_a_name">Give your playlist a name</string>
+    <string name="create">create</string>
+    <string name="cancel">cancel</string>
+    <string name="name">name</string>
+    <string name="create_playlist">Create Playlist</string>
+    <string name="currentplaylist">currentPlaylist</string>
 </resources>

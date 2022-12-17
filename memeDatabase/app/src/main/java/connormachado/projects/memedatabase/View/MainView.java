@@ -13,7 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import connormachado.projects.memedatabase.Controller.MainActivity;
-import connormachado.projects.memedatabase.View.IMainView;
 import connormachado.projects.memedatabase.databinding.ActivityMainBinding;
 
 public class MainView extends Fragment implements IMainView {
@@ -25,6 +24,12 @@ public class MainView extends Fragment implements IMainView {
         this.fmanager = activity.getSupportFragmentManager();
         this.binding = ActivityMainBinding.inflate(activity.getLayoutInflater());
         this.mainActivity = mainActivity;
+
+        this.binding.toSearchButton.setOnClickListener(view -> MainView.this.mainActivity.displaySearchFragment());
+
+        this.binding.toHomeButton.setOnClickListener(view -> MainView.this.mainActivity.displayHomeFragment());
+
+//        this.binding.toPlayButton.setOnClickListener(view -> MainView.this.mainActivity.displayPlayFragment());
     }
 
     @Override
@@ -53,6 +58,18 @@ public class MainView extends Fragment implements IMainView {
             ft.addToBackStack(name);
         }
         ft.commit();
+    }
+
+    public void ignoreButtons(){
+        this.binding.toSearchButton.setVisibility(View.INVISIBLE);
+        this.binding.toHomeButton.setVisibility(View.INVISIBLE);
+        this.binding.toPlayButton.setVisibility(View.INVISIBLE);
+    }
+
+    public void showButtons(){
+        this.binding.toSearchButton.setVisibility(View.VISIBLE);
+        this.binding.toHomeButton.setVisibility(View.VISIBLE);
+        this.binding.toPlayButton.setVisibility(View.VISIBLE);
     }
 }
 

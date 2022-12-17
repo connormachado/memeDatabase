@@ -2,66 +2,38 @@ package connormachado.projects.memedatabase.Model;
 
 import androidx.annotation.NonNull;
 
-/**
- * Provides a way to represent a user through a profile
- * Each profile will be constructed with a username and password
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Profile {
     String username;
     String password;
+    List<Playlist> playlists = new ArrayList<Playlist>();
 
-    /**
-     * Provides a way to make a profile with all contained information
-     * @param username The name the user wants the profile to have
-     * @param password The password the user wants the profile to have
-     */
+
     public Profile (String username, String password){
         this.username = username;
         this.password = password;
+        addPlaylist(new Playlist("Liked Memes"));
     }
 
 
-    /**
-     * Constructor of Profile
-     */
-    public  Profile (){}
+    public String getUsername(){ return this.username; }
 
 
-    /**
-     * Provides a method to get the username of the current profile
-     * @return String Returns the string representation of the username
-     */
-    public String getUsernameText(){
-        return this.username;
-    }
+    public String getPassword(){ return this.password; }
 
 
-    /**
-     * Provides a method to get the password of the current profile
-     * @return String Returns the string representation of the password
-     */
-    public String getPassword(){
-        return this.password;
-    }
-
-
-    /**
-     * Provides a method of checking if the username and password matches profiles username and password
-     * @param username The usernames' name to be checked against the profiles username
-     * @param password The usernames' password to be checked against the profiles password
-     * @return boolean
-     */
     public boolean checkLogin(String username, String password){
         return this.username.equalsIgnoreCase(username) && this.password.equals(password) ;
     }
 
+    public void addPlaylist(Playlist pl){ playlists.add(pl); }
 
-    /**
-     * Provides a way to get the string representation of the username
-     * @return String Returns the username as a string
-     */
+
     @NonNull
-    public String toString(){
-        return "" + this.username;
-    }
+    public String toString(){ return "" + this.username; }
+
+    public List<Playlist> getPlaylists(){ return this.playlists; }
 }
