@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671550378156",
+    "project_id": "memedatabase-8faa9",
+    "storage_bucket": "memedatabase-8faa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671550378156:android:c3298c7cbe8dc8f369cf09",
+        "android_client_info": {
+          "package_name": "connormachado.projects.memedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671550378156-6rs9aasg6q90j5ehgr5h7j7prmp6mns6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAae4pzAB_NOKJsMY0pnO-9LrQfmMUFE8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671550378156-6rs9aasg6q90j5ehgr5h7j7prmp6mns6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

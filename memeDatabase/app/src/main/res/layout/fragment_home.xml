@@ -5,74 +5,72 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.HomeFragment" >
+    android:layout_centerInParent="true"
+    tools:context=".View.HomeFragment">
 
     <LinearLayout
-        android:id="@+id/generalLinearLayout"
-        android:layout_width="409dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/otherbuttonLMAO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="idk" />
+        <LinearLayout
+            android:id="@+id/generalLinearLayout"
+            android:layout_width="409dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/logoutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Logout" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/otherbuttonLMAO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="idk" />
 
-    <TextView
-        android:id="@+id/homeScreenTitle"
-        android:layout_width="230dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/welcome"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/playlistLinearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generalLinearLayout" />
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logout" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/playlistLinearLayout"
-        android:layout_width="374dp"
-        android:layout_height="427dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/homeScreenTitle"
+            android:layout_width="302dp"
+            android:layout_height="79dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/toCreatePlaylistScreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/create_playlist" />
+        <LinearLayout
+            android:id="@+id/playlistLinearLayout"
+            android:layout_width="374dp"
+            android:layout_height="427dp"
+            android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TableLayout
-                android:id="@+id/dynamicPlaylistLayout"
+            <Button
+                android:id="@+id/toCreatePlaylistScreen"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:text="@string/create_playlist" />
 
-            </TableLayout>
-        </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/dynamicPlaylistLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+            </ScrollView>
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -7,22 +7,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Space;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import connormachado.projects.memedatabase.Model.Playlist;
-import connormachado.projects.memedatabase.R;
 import connormachado.projects.memedatabase.databinding.FragmentHomeBinding;
-import connormachado.projects.memedatabase.databinding.FragmentLoginBinding;
 
 
 public class HomeFragment extends Fragment implements IHomeFragment{
@@ -81,8 +76,8 @@ public class HomeFragment extends Fragment implements IHomeFragment{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        String newTitleText = "Welcome fellow MemeLord " + HomeFragment.this.listener.getUsersName() + "!";
-        String newTitleText = "Welcome Connor!";
+        String newTitleText = "Welcome fellow MemeLord " + HomeFragment.this.listener.getUsersName() + "!";
+//        String newTitleText = "Welcome Connor!";
         this.binding.homeScreenTitle.setText( newTitleText );
 
 
